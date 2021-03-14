@@ -29,8 +29,13 @@ public class RestApi {
         return accessorService.loadParameters();
     }
 
-    @GetMapping("/generate")
-    public void generate() {
-        accessorService.generate();
+    @GetMapping("/generate/addresses")
+    public void generateAddresses() {
+        accessorService.generateAddresses();
+    }
+
+    @GetMapping("/generate/trips")
+    public void generateTrips(){
+        accessorService.generateTrips();
     }
 }

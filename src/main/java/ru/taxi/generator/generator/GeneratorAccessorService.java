@@ -38,8 +38,12 @@ public class GeneratorAccessorService {
         return generatorParamsRepository.findAll().stream().findFirst().orElse(null);
     }
 
-    public void generate() {
-        artificialDataGenerator.generate();
+    public void generateTrips() {
+        artificialDataGenerator.generateTrips();
+    }
+
+    public void generateAddresses() {
+        artificialDataGenerator.generateAddresses();
     }
 
 }
