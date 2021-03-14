@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: "jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:taxi_db}"
+    username: ${DATABASE_USERNAME:adminapp}
+    password: ${DATABASE_PASSWORD:adminapp}
+logging:
+  level:
+    org.atmosphere: warn
+    spring.boot: info
+    ru.taxi.adminpanel: info
+    vaadin: info
+
+google-api:
+  key: AIzaSyB8V8hR1JKIG9L8ojccE5cOfMD4hS3seoA
+  response:
+    lang: ru
+    sensor: false
+
