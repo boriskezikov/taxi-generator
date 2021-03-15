@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   datasource:
     url: "jdbc:postgresql://${DATABASE_HOST:ec2-54-85-13-135.compute-1.amazonaws.com}:${DATABASE_PORT:5432}/${DATABASE_NAME:d1r2mbfguo9ovh}"
