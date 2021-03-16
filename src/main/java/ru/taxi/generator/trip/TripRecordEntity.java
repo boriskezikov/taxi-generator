@@ -37,11 +37,11 @@ public class TripRecordEntity {
     private BigInteger id;
 
     @JoinColumn(name = "address_from_id", nullable = false)
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private AddressEntity fromAddressEntity;
 
     @JoinColumn(name = "address_to_id", nullable = false)
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private AddressEntity toAddressEntity;
 
     @Column(nullable = false)
