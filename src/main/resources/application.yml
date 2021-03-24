@@ -15,9 +15,6 @@ logging:
     spring.boot: ${LOG_LEVEL:info}
     ru.taxi.adminpanel: ${LOG_LEVEL:info}
     vaadin: ${LOG_LEVEL_VAADIN:info}
-generator:
-  trips: ${TRIPS_COUNT:10}
-  addr: ${ADDRESSES_COUNT:10}
 google-api:
   key: AIzaSyB8V8hR1JKIG9L8ojccE5cOfMD4hS3seoA
   response:

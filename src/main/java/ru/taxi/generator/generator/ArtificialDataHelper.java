@@ -31,8 +31,8 @@ public class ArtificialDataHelper {
     }
 
     public static LocalTime getTime() {
-        LocalTime l = LocalTime.of(0, 0);
-        LocalTime r = LocalTime.of(23, 59);
+        LocalTime l = LocalTime.MIN;
+        LocalTime r = LocalTime.MAX;
         long randomTime = ThreadLocalRandom.current().nextLong(l.toNanoOfDay(), r.toNanoOfDay());
         return LocalTime.ofNanoOfDay(randomTime);
     }

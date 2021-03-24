@@ -64,7 +64,7 @@ public class ArtificialDataGenerator {
             final int days = (int) gParams.getTripsDateLeftBorder().until(gParams.getTripsDateRightBorder(), ChronoUnit.DAYS);
             List<LocalDate> dateRange = Stream.iterate(gParams.getTripsDateLeftBorder(), d -> d.plusDays(1))
                     .limit(days).collect(Collectors.toList());
-            dateRange.forEach(date -> {
+            dateRange.parallelStream().forEach(date -> {
                 generateTripForDate(gParams, date);
                 log.info("Date {} finished", date);
             });
